@@ -62,7 +62,7 @@ M.base = {
     Keyword = { fg = colors.pink, style = 'bold' },
 
     Label  = { fg = colors.red_key_w },
-    LineNr = { fg = colors.line_fg, bg = colors.line_bg },
+    LineNr = { fg = colors.line_fg, bg = colors.bg },
 
     Macro         = { fg = colors.red_key_w, style = config.italic_keywords },
     MatchParen    = { fg = colors.gray2, bg = 'NONE', style = 'underline' },
@@ -94,7 +94,7 @@ M.base = {
     Repeat = { fg = colors.pink },
 
     Search              = { fg = colors.line_fg, bg = colors.orange },
-    SignColumn          = { bg = colors.line_bg },
+    SignColumn          = { bg = colors.bg },
     Special             = { fg = colors.red_key_w },
     SpecialChar         = { fg = colors.green_func },
     SpecialComment      = { fg = colors.pink },
@@ -104,7 +104,7 @@ M.base = {
     SpellLocal          = { fg = colors.green, style = 'underline' },
     SpellRare           = { fg = colors.pink, style = 'underline' },
     Statement           = { fg = colors.red_key_w },
-    StatusLine          = { fg = colors.black, bg = colors.accent, style = 'bold' },
+    StatusLine          = { fg = colors.vsplit_fg, bg = colors.gray, style = 'bold' },
     StatusLineNC        = { fg = colors.line_fg, bg = colors.black },
     StatusLineSeparator = { fg = colors.dark },
     StatusLineTerm      = { fg = colors.green_func, bg = colors.black },
@@ -133,7 +133,7 @@ M.base = {
     WarningMsg  = { fg = colors.orange_wr, bg = colors.none },
     Whitespace  = { fg = colors.non_text },
     WildMenu    = { fg = colors.fg },
-    WinBar      = { fg = colors.orange_wr, bg = colors.none, style = 'bold' },
+    WinBar      = { fg = colors.green, bg = colors.none, style = 'bold' },
     WinBarNC    = { fg = colors.comment, bg = colors.none },
     WinBarError = { fg = colors.red_err, bg = colors.none, style = 'bold,italic' },
     lCursor     = { fg = colors.cursor_fg, bg = colors.cursor_bg },
@@ -215,9 +215,9 @@ M.plugins = {
     -----------------------------------------
     --   Gitsigns: github.com/lewis6991/gitsigns.nvim
     -----------------------------------------
-    GitSignsAdd    = { fg = colors.green_func, bg = colors.line_bg },
-    GitSignsChange = { fg = colors.diff_change, bg = colors.line_bg },
-    GitSignsDelete = { fg = colors.red_key_w, bg = colors.line_bg },
+    GitSignsAdd    = { fg = colors.green_func, bg = colors.bg },
+    GitSignsChange = { fg = colors.diff_change, bg = colors.bg },
+    GitSignsDelete = { fg = colors.red_key_w, bg = colors.bg },
     -----------------------------------------
 
     -----------------------------------------
@@ -248,10 +248,10 @@ M.plugins = {
     DiagnosticVirtualTextInfo  = { fg = colors.yellow, style = 'italic,undercurl' },
     DiagnosticVirtualTextWarn  = { fg = colors.orange_wr, style = 'italic,undercurl' },
 
-    DiagnosticSignError = { fg = colors.red_err, bg = colors.gutter_bg, style = 'bold' },
-    DiagnosticSignHint  = { fg = colors.blue_func, bg = colors.gutter_bg, style = 'bold' },
-    DiagnosticSignInfo  = { fg = colors.yellow, bg = colors.gutter_bg, style = 'bold' },
-    DiagnosticSignWarn  = { fg = colors.orange_wr, bg = colors.gutter_bg, style = 'bold' },
+    DiagnosticSignError = { fg = colors.red_err, bg = colors.bg, style = 'bold' },
+    DiagnosticSignHint  = { fg = colors.blue_func, bg = colors.bg, style = 'bold' },
+    DiagnosticSignInfo  = { fg = colors.yellow, bg = colors.bg, style = 'bold' },
+    DiagnosticSignWarn  = { fg = colors.orange_wr, bg = colors.bg, style = 'bold' },
 
     DiagnosticUnderlineError = { sp = colors.red_err, style = 'undercurl' },
     DiagnosticUnderlineHint  = { sp = colors.blue_func, style = 'undercurl' },
@@ -312,7 +312,7 @@ M.plugins = {
     -----------------------------------------
     NvimTreeFolderIcon       = { fg = colors.orange },
     NvimTreeEmptyFolderName  = { fg = colors.yellow, style = "italic" },
-    NvimTreeCursorLine       = { bg = colors.black1 },
+    NvimTreeCursorLine       = { bg = colors.gray1 },
     NvimTreeExecFile         = { fg = colors.green },
     -- NvimTreeFolderIcon       = { fg = colors.comment },
     NvimTreeFolderName       = { fg = colors.white1 },
@@ -324,14 +324,14 @@ M.plugins = {
     NvimTreeGitStaged        = { fg = colors.diff_add },
     NvimTreeImageFile        = { fg = colors.pink },
     NvimTreeIndentMarker     = { fg = colors.comment },
-    NvimTreeNormal           = { fg = colors.white1, bg = colors.black },
-    NvimTreeNormalNC         = { bg = colors.black },
+    NvimTreeNormal           = { fg = colors.white1, bg = colors.gray },
+    NvimTreeNormalNC         = { bg = colors.gray },
     NvimTreeOpenedFolderName = { fg = colors.white1, style = 'italic' },
     NvimTreeRootFolder       = { fg = colors.yellow, style = 'bold' },
     NvimTreeSpecialFile      = { fg = colors.orange },
     NvimTreeSymlink          = { fg = colors.yellow },
-    NvimTreeVertSplit        = { fg = colors.black },
-    NvimTreeEndOfBuffer      = { fg = colors.black },
+    NvimTreeVertSplit        = { fg = colors.gray },
+    NvimTreeEndOfBuffer      = { fg = colors.gray },
     -----------------------------------------
 
     -----------------------------------------
