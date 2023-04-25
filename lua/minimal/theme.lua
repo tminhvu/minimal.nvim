@@ -272,11 +272,11 @@ M.plugins = {
     -----------------------------------------
     --   Lsp: neovim.io/doc/user/lsp.html
     -----------------------------------------
-    DiagnosticVirtualTextInfo = { fg = colors.yellow, style = 'italic,underline' },
+    DiagnosticVirtualTextInfo = { fg = colors.yellow, style = 'italic,undercurl' },
     DiagnosticHint            = { fg = colors.blue_type },
     DiagnosticError           = { fg = colors.red_err },
     DiagnosticInfo            = { fg = colors.yellow },
-    DiagnosticVirtualTextWarn = { fg = colors.orange_wr, style = 'italic,underline' },
+    DiagnosticVirtualTextWarn = { fg = colors.orange_wr, style = 'italic,undercurl' },
     DiagnosticWarn            = { fg = colors.orange_wr },
 
     DiagnosticFloatingError = { fg = colors.red_err },
@@ -294,8 +294,8 @@ M.plugins = {
     DiagnosticUnderlineInfo  = { sp = colors.yellow, style = 'undercurl' },
     DiagnosticUnderlineWarn  = { sp = colors.orange_wr, style = 'undercurl' },
 
-    DiagnosticVirtualTextError = { fg = colors.red_err, style = 'italic,underline' },
-    DiagnosticVirtualTextHint  = { fg = colors.gray2, style = 'italic,underline' },
+    DiagnosticVirtualTextError = { fg = colors.red_err, style = 'italic,undercurl' },
+    DiagnosticVirtualTextHint  = { fg = colors.gray2, style = 'italic,undercurl' },
     -----------------------------------------
 
 
